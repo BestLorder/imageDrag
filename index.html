@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "www.sucaihuo.com/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="www.sucaihuo.com/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>image draggable</title>
+  <link rel="stylesheet" href="css/drag.css" />
+</head>
+
+<body>
+  <div class="box">
+    <div class="draggable-element">
+      <img class="auction" src="images/youku.png" />
+      <div class="hover"></div>
+      <div class="active">
+        <div class="gesture">
+        </div>
+        <div class="tip">长按拖动</div>
+        <img class="trash" src="images/trash.png" />
+      </div>
+    </div>
+    <div class="draggable-element">
+      <img class="auction" src="images/jd.png" />
+      <div class="hover"></div>
+      <div class="active">
+        <div class="gesture">
+        </div>
+        <div class="tip">长按拖动</div>
+        <img class="trash" src="images/trash.png" />
+      </div>
+    </div>
+    <div class="draggable-element-last">
+      <input name="add" type="file" id="add" style="display: none" />
+      <label class="last" for="add">
+        <div class="last-active">
+          <img class="add" src="images/add.png" />
+          <div class="add-text">添加上传图片</div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/drag-arrange.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $('.draggable-element').arrangeable()
+    })
+  </script>
+</body>
+
+</html>
